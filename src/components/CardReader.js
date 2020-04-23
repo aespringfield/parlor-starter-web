@@ -169,9 +169,9 @@ export default class CardReader extends Component {
                     {
                         ({ user }) => (
                             <div>
-                                { this.state.cards.map((card, index) => {
+                                {/* { this.state.cards.map((card, index) => {
                                     return <p key={index}>{card.data.text}</p>
-                                }) }
+                                }) } */}
                                 {
                                     user.role === "HOST"
                                         ? <div><button onClick={ this.handleReset }>Reset</button><button onClick={ this.handleNextPlayer }>Next player</button></div>
